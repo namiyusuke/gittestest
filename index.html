@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="mimaru__lp">
+    <div class="header__wrapper">
+      <div class="header__button">
+        <p class="book__wrap">
+          <a class="book__link -white" href="#">
+            <span class="book__link__icon">
+              <span class="book__link__text">BOOK</span>
+            </span>
+          </a>
+        </p>
+      </div>
+      <header class="header">
+        <h1 class="header__logo">
+          <img src="img/logo_mimaru.webp" alt="mimaru" width="200" height="50" />
+        </h1>
+      </header>
+    </div>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__kv">
+          <picture>
+            <source srcset="img/main_visual_sp.webp" media="(max-width: 768px)" />
+            <img src="img/main_visual_pc.webp" alt="メインビジュアル" width="1200" height="630" />
+          </picture>
+        </div>
+      </section>
+      <section class="coupon">
+        <div class="coupon__inner">
+          <img class="coupon__bg__pattern01" src="img/coupon_bg_pattern01.png" alt="クーポン" />
+          <img class="coupon__bg__pattern02" src="img/coupon_bg_pattern02.png" alt="クーポン" />
+          <h2 class="coupon__title">
+            NATAS<br class="u-br -sp" />
+            Special Coupon
+            <span class="coupon__title__sub">(Valid Before, During, and After the Event!)</span>
+          </h2>
+          <div class="coupon__content">
+            <p class="coupon__content__title">
+              <span class="coupon__content__text__number">Coupon Code</span>
+            </p>
+            <p class="coupon__content__text">
+              <span id="coupon__content__text__number" class="coupon__content__text__number">mimaru_natas25</span>
+              <button class="copy__button" onclick="copyButton('coupon__content__text__number')">
+                <span class="copy__button__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="#1C2A4E" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.06396 5.24414C8.6857 5.24414 8.37646 5.55337 8.37646 5.93164V6.50146H5.93896C5.5607 6.50146 5.25146 6.8107 5.25146 7.18896V14.064C5.25146 14.4422 5.5607 14.7515 5.93896 14.7515H10.939C11.3172 14.7515 11.6265 14.4422 11.6265 14.064V13.4941H14.064C14.4422 13.4941 14.7515 13.1849 14.7515 12.8066V8.32539C14.7515 7.97784 14.6135 7.64264 14.3638 7.39936L12.5957 5.6312C12.3467 5.38223 12.0184 5.24414 11.6702 5.24414H9.06396ZM9.12646 6.63905C9.2519 6.70209 9.36802 6.78588 9.47066 6.88852L11.2388 8.65669C11.4885 8.89996 11.6265 9.23516 11.6265 9.58271V12.7441H14.0015V8.50146H12.189C11.8107 8.50146 11.5015 8.19223 11.5015 7.81396V5.99414H9.12646V6.63905ZM12.2515 6.33878V7.75146H13.6642L12.2515 6.33878ZM10.8765 9.75146H9.06396C8.6857 9.75146 8.37646 9.44223 8.37646 9.06396V7.25146H6.00146V14.0015H10.8765V9.75146ZM10.5318 9.00146L9.12646 7.5961V9.00146H10.5318Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </p>
+          </div>
+          <picture class="coupon__content__txt">
+            <source srcset="img/coupon_text_sp.webp" media="(max-width: 768px)" />
+            <img src="img/coupon_text_pc.webp" alt="クーポン" width="592" height="320" />
+          </picture>
+          <p class="book__wrap">
+            <a class="book__link" href="#">
+              <span class="book__link__icon">
+                <span class="book__link__text">BOOK</span>
+              </span>
+            </a>
+          </p>
+        </div>
+        <picture class="coupon__content__sm">
+          <source srcset="img/coupon_text__sm_sp.webp" media="(max-width: 768px)" />
+          <img src="img/coupon_text__sm_pc.webp" alt="クーポン" width="592" height="320" />
+        </picture>
+      </section>
+      <section class="about">
+        <div class="about__wrap">
+          <picture class="about__bg">
+            <source srcset="img/about_bg_sp.png" media="(max-width: 768px)" />
+            <img src="img/about_bg_pc.png" alt="クーポン" width="592" height="320" />
+          </picture>
+          <picture class="about__bg__gradation">
+            <source srcset="img/about_gradation_sp.png" media="(max-width: 768px)" />
+            <img src="img/about_gradation_pc.png" alt="クーポン" width="592" height="320" />
+          </picture>
+          <div class="about__txt__wrap">
+            <div class="about__txt">
+              <picture class="about__txt__inner">
+                <source srcset="img/about_txt_sp.png" media="(max-width: 768px)" />
+                <img src="img/about_txt_pc.png" alt="クーポン" width="592" height="320" />
+              </picture>
+              <p class="c-button">
+                <a class="c-button__link -white" href="#">
+                  <span class="c-button__link__icon">About MIMARU</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="room">
+        <div class="room__inner">
+          <picture class="room__bg">
+            <source srcset="img/room_bg_sp.jpg" media="(max-width: 768px)" />
+            <img src="img/room_bg_pc.jpg" alt="クーポン" width="2880" height="2520" />
+          </picture>
+          <div class="room__content">
+            <img class="experience__icon c-icon" src="img/mimaru_icon.png" alt="クーポン" width="937" height="239" />
+            <picture class="room__title">
+              <source srcset="img/room_title_sp.png" media="(max-width: 768px)" />
+              <img src="img/room_title_pc.png" alt="クーポン" width="937" height="239" />
+            </picture>
+            <div class="room__flex">
+              <div class="room__flex__item -txt">
+                <picture class="room__txt">
+                  <source srcset="img/room_txt_sp.png" media="(max-width: 768px)" />
+                  <img src="img/room_txt_pc.png" alt="クーポン" width="712" height="163" />
+                </picture>
+                <p class="book">
+                  <a class="book__link" href="#">
+                    <span class="book__link__icon">BOOK</span>
+                  </a>
+                </p>
+              </div>
+              <div class="room__flex__item -img">
+                <figure><img src="img/room_image.jpg" alt="クーポン" width="712" height="163" /></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="staff">
+        <div class="staff__inner">
+          <picture class="staff__bg">
+            <source srcset="img/staff_bg_sp.jpg" media="(max-width: 768px)" />
+            <img src="img/staff_bg_pc.jpg" alt="クーポン" width="2880" height="2520" />
+          </picture>
+          <div class="staff__content">
+            <img class="staff__icon c-icon" src="img/mimaru_icon.png" alt="クーポン" width="937" height="239" />
+            <picture class="staff__title">
+              <source srcset="img/staff_title_sp.png" media="(max-width: 768px)" />
+              <img src="img/staff_title_pc.png" alt="クーポン" width="937" height="239" />
+            </picture>
+            <div class="staff__flex">
+              <div class="staff__flex__item -txt">
+                <picture class="room__txt">
+                  <source srcset="img/staff_txt_sp.png" media="(max-width: 768px)" />
+                  <img src="img/staff_txt_pc.png" alt="クーポン" width="712" height="163" />
+                </picture>
+              </div>
+              <div class="staff__flex__item -img">
+                <figure><img src="img/staff_image.png" alt="クーポン" width="712" height="163" /></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experience">
+        <div class="experience__inner">
+          <picture class="experience__bg">
+            <source srcset="img/experience_bg_sp.jpg" media="(max-width: 768px)" />
+            <img src="img/experience_bg_pc.jpg" alt="クーポン" width="2880" height="2520" />
+          </picture>
+          <div class="experience__content">
+            <img class="experience__icon c-icon" src="img/mimaru_icon.png" alt="クーポン" width="937" height="239" />
+            <picture class="experience__title">
+              <source srcset="img/experience_title_sp.png" media="(max-width: 768px)" />
+              <img src="img/experience_title_pc.png" alt="クーポン" width="937" height="239" />
+            </picture>
+            <div class="experience__flex">
+              <div class="experience__flex__item -txt">
+                <picture class="experience__txt">
+                  <source srcset="img/experience_txt_sp.png" media="(max-width: 768px)" />
+                  <img src="img/experience_txt_pc.png" alt="クーポン" width="712" height="163" />
+                </picture>
+              </div>
+              <p class="c-button">
+                <a class="c-button__link -blue" href="#">
+                  <span class="c-button__link__icon">About MIMARU</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__inner">
+        <picture class="footer__bg">
+          <source srcset="img/footer_sp.png" media="(max-width: 768px)" />
+          <img src="img/footer_pc.png" alt="クーポン" width="2880" height="2520" />
+        </picture>
+      </div>
+    </footer>
+    <script>
+      function copyButton(elementId) {
+        let target = document.getElementById(elementId);
+        navigator.clipboard.writeText(target.textContent);
+      }
+    </script>
+  </body>
+</html>
