@@ -502,17 +502,26 @@
 .room__bg {
   position: relative;
 }
-.room__bg::before {
+.room__bg__wrap {
+  position: relative;
+}
+.room__bg__wrap::before {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 52.12%, #ffffff 99.75%); /* Safari用 */
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.12%, #ffffff 99.75%);
+  /* background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 52.12%, #ffffff 99.75%); */
 }
 @media (width >= 768px) {
-  .room__bg::before {
+  .room__bg__wrap::before {
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 29.25%, #ffffff 84.76%); /* Safari用 */
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 29.25%, #ffffff 84.76%);
   }
 }
@@ -561,7 +570,8 @@
   z-index: 3;
 }
 @media (width >= 768px) {
-  .room__content {
+  .room__content,
+  .staff__content {
     top: min(calc(192 / 1440 * 100vw), 192px);
   }
   .staff__inner {
@@ -645,17 +655,22 @@
 .staff__bg {
   position: relative;
 }
-.staff__bg::before {
+.staff__bg__wrap {
+  position: relative;
+}
+.staff__bg__wrap::before {
   content: "";
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: -webkit-linear-gradient(180deg, rgba(28, 42, 78, 0) 27.09%, #1c2a4e 100%); /* Safari用 */
   background: linear-gradient(180deg, rgba(28, 42, 78, 0) 27.09%, #1c2a4e 100%);
 }
 @media (width >= 768px) {
-  .staff__bg::before {
+  .staff__bg__wrap::before {
     background: linear-gradient(180deg, rgba(28, 42, 78, 0) 29.25%, #1c2a4e 84.76%);
   }
 }
@@ -707,23 +722,25 @@
   margin-inline: auto;
   z-index: 3;
 }
-.experience__bg {
+.experience__bg__wrap {
   position: relative;
 }
-.experience__bg::before {
+.experience__bg__wrap::before {
   content: "";
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 52.12%, #ffffff 99.75%); /* Safari用 */
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.12%, #ffffff 99.75%);
 }
 @media (width >= 768px) {
   .experience__inner {
     padding-bottom: 0;
   }
-  .experience__bg::before {
+  .experience__bg__wrap::before {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 29.25%, #ffffff 84.76%);
   }
 }
