@@ -10,13 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif+JP:wght@200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="mimaru__lp">
     <div class="header__wrapper">
       <div class="header__button">
         <p class="book__wrap">
-          <a class="book__link -white" href="#">
+          <a
+            class="book__link -white"
+            target="_blank"
+            href="https://booking.mimaruhotels.com/facilities?code=1b82f27a8a11e8b7a783a700c0d55f39&type=rooms&order=price_low_to_high&is_including_occupied=false&rooms=%5B%7B%22adults%22%3A2%7D%5D&isTrusted=true&checkin=2025%2F01%2F30&checkout=2025%2F01%2F31"
+          >
             <span class="book__link__icon">
               <span class="book__link__text">BOOK</span>
             </span>
@@ -25,7 +29,7 @@
       </div>
       <header class="header">
         <h1 class="header__logo">
-          <img src="img/logo_mimaru.webp" alt="mimaru" width="200" height="50" />
+          <img src="./img/logo_mimaru.webp" alt="mimaru" width="200" height="50" />
         </h1>
       </header>
     </div>
@@ -33,15 +37,27 @@
       <section class="hero">
         <div class="hero__kv">
           <picture>
-            <source srcset="img/main_visual_sp.webp" media="(max-width: 768px)" />
-            <img src="img/main_visual_pc.webp" alt="メインビジュアル" width="1200" height="630" />
+            <source srcset="./img/main_visual_sp.webp" media="(max-width: 768px)" />
+            <img src="./img/main_visual_pc.webp" alt="main visual" width="1200" height="630" />
           </picture>
         </div>
       </section>
       <section class="coupon">
         <div class="coupon__inner">
-          <img class="coupon__bg__pattern01" src="img/coupon_bg_pattern01.png" alt="クーポン" />
-          <img class="coupon__bg__pattern02" src="img/coupon_bg_pattern02.png" alt="クーポン" />
+          <img
+            class="coupon__bg__pattern01"
+            src="./img/coupon_bg_pattern01.webp"
+            alt="クーポン"
+            width="488"
+            height="488"
+          />
+          <img
+            class="coupon__bg__pattern02"
+            src="./img/coupon_bg_pattern02.webp"
+            alt="クーポン"
+            width="488"
+            height="488"
+          />
           <h2 class="coupon__title">
             NATAS<br class="u-br -sp" />
             Special Coupon
@@ -53,7 +69,7 @@
             </p>
             <p class="coupon__content__text">
               <span id="coupon__content__text__number" class="coupon__content__text__number">mimaru_natas25</span>
-              <button class="copy__button" onclick="copyButton('coupon__content__text__number')">
+              <button type="button" class="copy__button" onclick="copyButton('coupon__content__text__number')">
                 <span class="copy__button__icon">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="10" fill="#1C2A4E" />
@@ -69,11 +85,22 @@
             </p>
           </div>
           <picture class="coupon__content__txt">
-            <source srcset="img/coupon_text_sp.webp" media="(max-width: 768px)" />
-            <img src="img/coupon_text_pc.webp" alt="クーポン" width="592" height="320" />
+            <source srcset="./img/coupon_text_sp.webp" media="(max-width: 768px)" />
+            <img
+              src="./img/coupon_text_pc.webp"
+              alt="Get a 5% discount by using this coupon code.
+You can get another 5% discount by joining our membership for free!
+We also accept inquiries at the NATAS event venue on the day!"
+              width="1211"
+              height="163"
+            />
           </picture>
           <p class="book__wrap">
-            <a class="book__link" href="#">
+            <a
+              class="book__link"
+              target="_blank"
+              href="https://booking.mimaruhotels.com/facilities?code=1b82f27a8a11e8b7a783a700c0d55f39&type=rooms&order=price_low_to_high&is_including_occupied=false&rooms=%5B%7B%22adults%22%3A2%7D%5D&isTrusted=true&checkin=2025%2F01%2F30&checkout=2025%2F01%2F31"
+            >
               <span class="book__link__icon">
                 <span class="book__link__text">BOOK</span>
               </span>
@@ -81,28 +108,46 @@
           </p>
         </div>
         <picture class="coupon__content__sm">
-          <source srcset="img/coupon_text__sm_sp.webp" media="(max-width: 768px)" />
-          <img src="img/coupon_text__sm_pc.webp" alt="クーポン" width="592" height="320" />
+          <source srcset="./img/coupon_text__sm_sp.webp" media="(max-width: 768px)" />
+          <img
+            src="./img/coupon_text__sm_pc.webp"
+            alt="* This coupon is valid for reservations made from Feb 6 2025 to Mar 15 2025.* Reservations for stays between Feb 6 2025(check-in) ~ Jun 30 2025(check-out) are available.* Applicable to reservation for 2-6 nights.* Pokémon rooms are excluded.* Discounts other than the MIMARU Member Program discount will not be applied."
+            width="1131"
+            height="168"
+          />
         </picture>
       </section>
       <section class="about">
         <div class="about__wrap">
           <picture class="about__bg">
-            <source srcset="img/about_bg_sp.png" media="(max-width: 768px)" />
-            <img src="img/about_bg_pc.png" alt="クーポン" width="592" height="320" />
+            <source srcset="./img/about_bg_sp.webp" media="(max-width: 768px)" />
+            <img src="./img/about_bg_pc.webp" alt="about image" width="592" height="320" />
           </picture>
           <picture class="about__bg__gradation">
-            <source srcset="img/about_gradation_sp.png" media="(max-width: 768px)" />
-            <img src="img/about_gradation_pc.png" alt="クーポン" width="592" height="320" />
+            <source srcset="./img/about_gradation_sp.webp" media="(max-width: 768px)" />
+            <img src="./img/about_gradation_pc.webp" alt="gradation" width="592" height="320" />
           </picture>
           <div class="about__txt__wrap">
             <div class="about__txt">
               <picture class="about__txt__inner">
-                <source srcset="img/about_txt_sp.png" media="(max-width: 768px)" />
-                <img src="img/about_txt_pc.png" alt="クーポン" width="592" height="320" />
+                <source srcset="./img/about_txt_sp.webp" media="(max-width: 768px)" />
+                <img
+                  src="./img/about_txt_pc.webp"
+                  alt="Come together with friends and family at MIMARU.
+During your stay,
+your room will feel like a comfortable home,
+and you'll find the staff always ready to support you.
+Traveling through Japan,
+you'll feel closer to your travel companions, become closer to those you encounter
+and your connections will become special and memorable.
+Unwinding time. Endearing ties.
+MIMARU"
+                  width="1089"
+                  height="1031"
+                />
               </picture>
               <p class="c-button">
-                <a class="c-button__link -white" href="#">
+                <a class="c-button__link -white" target="_blank" href="https://mimaruhotels.com/en/about/">
                   <span class="c-button__link__icon">About MIMARU</span>
                 </a>
               </p>
@@ -114,30 +159,48 @@
         <div class="room__inner">
           <div class="room__bg__wrap">
             <picture class="room__bg">
-              <source srcset="img/room_bg_sp.jpg" media="(max-width: 768px)" />
-              <img src="img/room_bg_pc.jpg" alt="クーポン" width="2880" height="2520" />
+              <source srcset="./img/room_bg_sp.webp" media="(max-width: 768px)" />
+              <img src="./img/room_bg_pc.webp" alt="ROOM Now you can all stay togather." width="2880" height="2520" />
             </picture>
           </div>
           <div class="room__content">
-            <img class="experience__icon c-icon" src="img/mimaru_icon.png" alt="クーポン" width="937" height="239" />
-            <picture class="room__title">
-              <source srcset="img/room_title_sp.png" media="(max-width: 768px)" />
-              <img src="img/room_title_pc.png" alt="クーポン" width="937" height="239" />
-            </picture>
+            <img class="experience__icon c-icon" src="./img/mimaru_icon.webp" alt="クーポン" width="937" height="239" />
+            <h2>
+              <picture class="room__title">
+                <source srcset="./img/room_title_sp.webp" media="(max-width: 768px)" />
+                <img
+                  src="./img/room_title_pc.webp"
+                  alt="ROOM Now you can all stay togather."
+                  width="937"
+                  height="239"
+                />
+              </picture>
+            </h2>
             <div class="room__flex">
               <div class="room__flex__item -txt">
                 <picture class="room__txt">
-                  <source srcset="img/room_txt_sp.png" media="(max-width: 768px)" />
-                  <img src="img/room_txt_pc.png" alt="クーポン" width="712" height="163" />
+                  <source srcset="./img/room_txt_sp.webp" media="(max-width: 768px)" />
+                  <img
+                    src="./img/room_txt_pc.webp"
+                    alt="Spacious rooms. Equipped with
+kitchens so you can relax and feel closer
+to your family and friends."
+                    width="712"
+                    height="163"
+                  />
                 </picture>
                 <p class="book">
-                  <a class="book__link" href="#">
+                  <a
+                    class="book__link"
+                    target="_blank"
+                    href="https://booking.mimaruhotels.com/facilities?code=1b82f27a8a11e8b7a783a700c0d55f39&type=rooms&order=price_low_to_high&is_including_occupied=false&rooms=%5B%7B%22adults%22%3A2%7D%5D&isTrusted=true&checkin=2025%2F01%2F30&checkout=2025%2F01%2F31"
+                  >
                     <span class="book__link__icon">BOOK</span>
                   </a>
                 </p>
               </div>
               <div class="room__flex__item -img">
-                <figure><img src="img/room_image.jpg" alt="クーポン" width="712" height="163" /></figure>
+                <figure><img src="./img/room_image.webp" alt="room image" width="1170" height="778" /></figure>
               </div>
             </div>
           </div>
@@ -147,25 +210,40 @@
         <div class="staff__inner">
           <div class="staff__bg__wrap">
             <picture class="staff__bg">
-              <source srcset="img/staff_bg_sp.jpg" media="(max-width: 768px)" />
-              <img src="img/staff_bg_pc.jpg" alt="クーポン" width="2880" height="2520" />
+              <source srcset="./img/staff_bg_sp.webp" media="(max-width: 768px)" />
+              <img src="./img/staff_bg_pc.webp" alt="クーポン" width="2880" height="2520" />
             </picture>
           </div>
           <div class="staff__content">
-            <img class="staff__icon c-icon" src="img/mimaru_icon.png" alt="クーポン" width="937" height="239" />
-            <picture class="staff__title">
-              <source srcset="img/staff_title_sp.png" media="(max-width: 768px)" />
-              <img src="img/staff_title_pc.png" alt="クーポン" width="937" height="239" />
-            </picture>
+            <img class="staff__icon c-icon" src="./img/mimaru_icon.webp" alt="pattern" width="41" height="40" />
+            <h2>
+              <picture class="staff__title">
+                <source srcset="./img/staff_title_sp.webp" media="(max-width: 768px)" />
+                <img
+                  src="./img/staff_title_pc.webp"
+                  alt="STAFF Your friends at your travel destination."
+                  width="937"
+                  height="239"
+                />
+              </picture>
+            </h2>
             <div class="staff__flex">
               <div class="staff__flex__item -txt">
                 <picture class="room__txt">
-                  <source srcset="img/staff_txt_sp.png" media="(max-width: 768px)" />
-                  <img src="img/staff_txt_pc.png" alt="クーポン" width="712" height="163" />
+                  <source srcset="./img/staff_txt_sp.webp" media="(max-width: 768px)" />
+                  <img
+                    src="./img/staff_txt_pc.webp"
+                    alt="Multilingual Staff. With passionate
+affection for Japan, they will be there
+for you like a friend, bringing you
+closer to the city."
+                    width="712"
+                    height="163"
+                  />
                 </picture>
               </div>
               <div class="staff__flex__item -img">
-                <figure><img src="img/staff_image.png" alt="クーポン" width="712" height="163" /></figure>
+                <figure><img src="./img/staff_image.webp" alt="staff image" width="712" height="163" /></figure>
               </div>
             </div>
           </div>
@@ -175,25 +253,37 @@
         <div class="experience__inner">
           <div class="experience__bg__wrap">
             <picture class="experience__bg">
-              <source srcset="img/experience_bg_sp.jpg" media="(max-width: 768px)" />
-              <img src="img/experience_bg_pc.jpg" alt="クーポン" width="2880" height="2520" />
+              <source srcset="./img/experience_bg_sp.webp" media="(max-width: 768px)" />
+              <img src="./img/experience_bg_pc.webp" alt="Experience" width="2880" height="2520" />
             </picture>
           </div>
           <div class="experience__content">
-            <img class="experience__icon c-icon" src="img/mimaru_icon.png" alt="クーポン" width="937" height="239" />
-            <picture class="experience__title">
-              <source srcset="img/experience_title_sp.png" media="(max-width: 768px)" />
-              <img src="img/experience_title_pc.png" alt="クーポン" width="937" height="239" />
-            </picture>
+            <img class="experience__icon c-icon" src="./img/mimaru_icon.webp" alt="クーポン" width="937" height="239" />
+            <h2>
+              <picture class="experience__title">
+                <source srcset="./img/experience_title_sp.webp" media="(max-width: 768px)" />
+                <img
+                  src="./img/experience_title_pc.webp"
+                  alt="Experience Encountering something you'll want to come back for."
+                  width="937"
+                  height="239"
+                />
+              </picture>
+            </h2>
             <div class="experience__flex">
               <div class="experience__flex__item -txt">
                 <picture class="experience__txt">
-                  <source srcset="img/experience_txt_sp.png" media="(max-width: 768px)" />
-                  <img src="img/experience_txt_pc.png" alt="クーポン" width="712" height="163" />
+                  <source srcset="./img/experience_txt_sp.webp" media="(max-width: 768px)" />
+                  <img
+                    src="./img/experience_txt_pc.webp"
+                    alt="Experience Japanese cuisine and culture.Or just relax in your rooms. At MIMARU,you can turn your trip into something just for you."
+                    width="712"
+                    height="163"
+                  />
                 </picture>
               </div>
               <p class="c-button">
-                <a class="c-button__link -blue" href="#">
+                <a class="c-button__link -blue" target="_blank" href="https://mimaruhotels.com/en/about/">
                   <span class="c-button__link__icon">About MIMARU</span>
                 </a>
               </p>
@@ -205,8 +295,8 @@
     <footer>
       <div class="footer__inner">
         <picture class="footer__bg">
-          <source srcset="img/footer_sp.png" media="(max-width: 768px)" />
-          <img src="img/footer_pc.png" alt="クーポン" width="2880" height="2520" />
+          <source srcset="./img/footer_sp.webp" media="(max-width: 768px)" />
+          <img src="./img/footer_pc.webp" alt="footer" width="2880" height="2520" />
         </picture>
       </div>
     </footer>

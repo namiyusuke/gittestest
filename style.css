@@ -191,7 +191,7 @@
   margin-inline: auto;
   border-radius: 24px;
   background-color: #fff;
-  background-image: url(img/coupon_bg_sp.webp);
+  background-image: url(./img/coupon_bg_sp.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -203,7 +203,7 @@
   .coupon__inner {
     width: calc(1280 / 1440 * 100%);
     margin-inline: auto;
-    background-image: url(img/coupon_bg_pc.webp);
+    background-image: url(./img/coupon_bg_pc.webp);
     max-width: 1280px;
     padding-block: 72px;
   }
@@ -417,6 +417,8 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    max-width: 567px;
+    width: calc(567 / 1280 * 100%);
   }
 }
 .about {
@@ -517,7 +519,6 @@
   bottom: 0;
   background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 52.12%, #ffffff 99.75%); /* Safari用 */
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.12%, #ffffff 99.75%);
-  /* background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 52.12%, #ffffff 99.75%); */
 }
 @media (width >= 768px) {
   .room__bg__wrap::before {
